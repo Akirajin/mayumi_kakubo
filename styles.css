@@ -595,6 +595,165 @@ html {
     transform: translateY(-2px);
 }
 
+/* Experience Introduction */
+.experience-intro {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(var(--light-color), 0.3);
+    border-radius: 8px;
+    border-left: 4px solid rgb(var(--primary-color));
+}
+
+.experience-intro p {
+    color: rgb(var(--secondary-color));
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.experience-intro p:last-child {
+    margin-bottom: 0;
+}
+
+/* Specialty Sections */
+.tricologia-section {
+    background-color: rgb(var(--white));
+    padding: 80px 0;
+}
+
+.clinica-section {
+    background-color: rgba(var(--light-color), 0.2);
+    padding: 80px 0;
+}
+
+.estetica-section {
+    background-color: rgb(var(--white));
+    padding: 80px 0;
+}
+
+.specialty-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.specialty-content.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.specialty-content.reverse .specialty-image {
+    order: 1;
+}
+
+.specialty-content.reverse .specialty-text {
+    order: 2;
+}
+
+.specialty-text {
+    padding: 20px 0;
+}
+
+.specialty-description {
+    margin-bottom: 40px;
+}
+
+.specialty-description p {
+    color: rgb(var(--secondary-color));
+    line-height: 1.7;
+    font-size: 1.1em;
+}
+
+.specialty-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialty-photo {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.specialty-photo:hover {
+    transform: translateY(-5px);
+}
+
+/* Treatments Grid */
+.treatments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.treatment-item {
+    background-color: rgba(var(--white), 0.8);
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(var(--primary-color), 0.1);
+    transition: all 0.3s ease;
+}
+
+.treatment-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.treatment-item i {
+    font-size: 2.5em;
+    color: rgb(var(--primary-color));
+    margin-bottom: 15px;
+    display: block;
+}
+
+.treatment-item h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: rgb(var(--dark-color));
+    margin-bottom: 10px;
+}
+
+.treatment-item p {
+    color: rgb(var(--secondary-color));
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+/* Responsive Design for Specialty Sections */
+@media (max-width: 768px) {
+    .specialty-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .specialty-content.reverse .specialty-image {
+        order: 1;
+    }
+
+    .specialty-content.reverse .specialty-text {
+        order: 2;
+    }
+
+    .specialty-photo {
+        height: 300px;
+    }
+
+    .treatments-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .treatment-item {
+        padding: 20px;
+    }
+}
+
 /* Footer */
 .footer {
     background-color: rgb(var(--dark-color));
