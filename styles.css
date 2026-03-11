@@ -332,6 +332,44 @@ html {
     line-height: 1.5;
 }
 
+/* Locations Section */
+.locations-section {
+    margin-top: 50px;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.location-item {
+    background-color: rgb(var(--white));
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid rgb(var(--primary-color));
+}
+
+.location-item h4 {
+    color: rgb(var(--dark-color));
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.location-item h4 i {
+    color: rgb(var(--primary-color));
+}
+
+.location-item p {
+    color: rgb(var(--secondary-color));
+    line-height: 1.6;
+}
+
 /* Services Section */
 .services-section {
     background-color: rgb(var(--white));
@@ -445,6 +483,27 @@ html {
 
 .contact-text p {
     color: rgb(var(--secondary-color));
+}
+
+.map-container {
+    margin-bottom: 40px;
+}
+
+.map-container h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: rgb(var(--dark-color));
+}
+
+.google-map {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.google-map iframe {
+    border-radius: 8px;
 }
 
 .social-links {
